@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anish Janardhan | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    h1, h2, h3 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+    section {
+      padding: 60px 10%;
+    }
+    nav {
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav h1 {
+      font-size: 24px;
+      color: #27ae60;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg') center/cover no-repeat;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 50px;
+      color: #27ae60;
+    }
+    .hero h2 {
+      font-size: 28px;
+      color: #f39c12;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 10px 20px;
+      margin: 10px;
+      background: #f39c12;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #d87f0e;
+    }
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+    }
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .skill {
+      background: #fff;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      font-weight: bold;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .project {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .project h3 {
+      margin-bottom: 10px;
+    }
+    .education .edu-item {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .contact p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Anish</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="hero" id="home">
+    <h1>Hi, I'm Anish Janardhan</h1>
+    <h2>Web Developer</h2>
+    <a href="#contact"><button class="btn">Contact Me</button></a>
+  </section>
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      Passionate and detail-oriented Web Developer with strong problem-solving skills.<br>
+      Experienced in front-end design and logical programming.<br>
+      Dedicated to continuous learning and creating impactful solutions.
+    </p>
+  </section>
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">C</div>
+      <div class="skill">Data Structures</div>
+      <div class="skill">Java</div>
+      <div class="skill">Python</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">DBMS (SQL)</div>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Calculator</h3>
+        <p>A working calculator built using HTML, CSS, and JavaScript with an interactive UI.</p>
+      </div>
+      <div class="project">
+        <h3>Restaurant Landing Page</h3>
+        <p>A responsive front-end landing page for a restaurant designed with HTML and CSS.</p>
+      </div>
+    </div>
+  </section>
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <h3>Pre-University</h3>
+      <p>Sri Chaitanya College – 82%</p>
+    </div>
+    <div class="edu-item">
+      <h3>Undergraduate</h3>
+      <p>Sreenidhi Institute Of Science And Technology – CGPA 7.3 (Awaiting 4th SEM Results)</p>
+    </div>
+    <div class="edu-item">
+      <h3>Internship</h3>
+      <p>Web Development Intern at Codsoft – 15th August to Present</p>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:anish.janardhanw@gmail.com">anish.janardhanw@gmail.com</a></p>
+    <p>Phone: <a href="tel:9391091926">9391091926</a></p>
+  </section>
+</body>
+</html>
